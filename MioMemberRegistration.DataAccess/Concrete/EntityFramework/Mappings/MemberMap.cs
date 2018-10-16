@@ -7,7 +7,7 @@ namespace MioMemberRegistration.DataAccess.Concrete.EntityFramework.Mappings
     {
         public MemberMap()
         {
-            ToTable(@"Members", @"dto");
+            ToTable(@"Members", @"dbo");
             HasKey(m => m.MemberId);
 
             Property(m => m.MemberId).HasColumnName("MemberId");
