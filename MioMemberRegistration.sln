@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MioBlog.Core", "MioBlog.Core\MioBlog.Core.csproj", "{C4867741-3CA8-4776-9AF3-C33CDF9D011B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MioMemberRegistration.Entities", "MioMemberRegistration.Entities\MioMemberRegistration.Entities.csproj", "{66239B25-79A8-480A-AEFF-4A68FC70B85D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MioMemberRegistration.DataAccess", "MioMemberRegistration.DataAccess\MioMemberRegistration.DataAccess.csproj", "{D1F0D5F9-58C0-46E5-A75E-5AF3E9B4496A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MioMemberRegistration.Business", "MioMemberRegistration.Business\MioMemberRegistration.Business.csproj", "{8DE8586A-A5D0-4E5B-8AAA-629DAB2AB42A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MioMemberRegistration.ConsoleUI", "MioMemberRegistration.ConsoleUI\MioMemberRegistration.ConsoleUI.csproj", "{1D3E19FF-C416-44C9-8884-A366A3455178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MioMemberRegistration.MvcWebUI", "MioMemberRegistration.MvcWebUI\MioMemberRegistration.MvcWebUI.csproj", "{A39AABE9-CF1F-4328-9723-77A60EB12155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4867741-3CA8-4776-9AF3-C33CDF9D011B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4867741-3CA8-4776-9AF3-C33CDF9D011B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4867741-3CA8-4776-9AF3-C33CDF9D011B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4867741-3CA8-4776-9AF3-C33CDF9D011B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66239B25-79A8-480A-AEFF-4A68FC70B85D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66239B25-79A8-480A-AEFF-4A68FC70B85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66239B25-79A8-480A-AEFF-4A68FC70B85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66239B25-79A8-480A-AEFF-4A68FC70B85D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F0D5F9-58C0-46E5-A75E-5AF3E9B4496A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F0D5F9-58C0-46E5-A75E-5AF3E9B4496A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F0D5F9-58C0-46E5-A75E-5AF3E9B4496A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F0D5F9-58C0-46E5-A75E-5AF3E9B4496A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DE8586A-A5D0-4E5B-8AAA-629DAB2AB42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DE8586A-A5D0-4E5B-8AAA-629DAB2AB42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DE8586A-A5D0-4E5B-8AAA-629DAB2AB42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DE8586A-A5D0-4E5B-8AAA-629DAB2AB42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D3E19FF-C416-44C9-8884-A366A3455178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D3E19FF-C416-44C9-8884-A366A3455178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D3E19FF-C416-44C9-8884-A366A3455178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D3E19FF-C416-44C9-8884-A366A3455178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39AABE9-CF1F-4328-9723-77A60EB12155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39AABE9-CF1F-4328-9723-77A60EB12155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39AABE9-CF1F-4328-9723-77A60EB12155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39AABE9-CF1F-4328-9723-77A60EB12155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79188B69-147E-475E-9176-368CE5F13B3B}
+	EndGlobalSection
+EndGlobal

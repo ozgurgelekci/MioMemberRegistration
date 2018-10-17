@@ -1,0 +1,100 @@
+﻿@model MioMemberRegistration.MvcWebUI.Models.MemberAddViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+</head>
+<body class="bg-light">
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h2>register form</h2>
+            <p class="lead">enter your information please</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-4">
+                @using (Html.BeginForm())
+                {
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">First name</label>
+                            @Html.TextBoxFor(m => m.Member.FirstName, new { @class = "form-control", placeholder = "Özgür" })
+                            @Html.ValidationMessageFor(model => model.Member.FirstName, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName">Last name</label>
+                            @Html.TextBoxFor(m => m.Member.LastName, new { @class = "form-control", placeholder = "Gelekçi" })
+                            @Html.ValidationMessageFor(model => model.Member.LastName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="TcNo">TC No </label>
+                        @Html.TextBoxFor(m => m.Member.TcNo, new { @class = "form-control", placeholder = "xxxxxxxxxxx" })
+                        @Html.ValidationMessageFor(model => model.Member.TcNo, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        @Html.TextBoxFor(m => m.Member.Email, new { @class = "form-control", placeholder = "ozgurgelekci@gmail.com" })
+                        @Html.ValidationMessageFor(model => model.Member.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="mb-3">
+                        <label for="DateOfBirth">Date Of Birth </label>
+                        @Html.TextBoxFor(m => m.Member.DateOfBirth, new { @class = "form-control", placeholder = "1988-04-27" })
+                        @Html.ValidationMessageFor(model => model.Member.DateOfBirth, "", new { @class = "text-danger" })
+                    </div>
+                    <hr class="mb-4">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">register!</button>
+                }
+            </div>
+        </div>
+
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">© @DateTime.Now.Year Özgür Gelekçi</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a data-toggle="modal" data-target="#exampleModalLong" href="#">Privacy</a></li>
+                <li class="list-inline-item"><a data-toggle="modal" data-target="#exampleModalLong" href="#">Terms</a></li>
+                <li class="list-inline-item"><a data-toggle="modal" data-target="#exampleModalLong" href="#">Support</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Info</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Hello, my name is Özgür. contact me : ozgurgelekci@gmail.com
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#exampleModalLong').on('shown.bs.modal',
+            function () {
+                $('#myInput').trigger('focus');
+            });
+    </script>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
