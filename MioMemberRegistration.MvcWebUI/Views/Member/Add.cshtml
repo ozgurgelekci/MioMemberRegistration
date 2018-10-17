@@ -21,6 +21,7 @@
             <img class="d-block mx-auto mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
             <h2>register form</h2>
             <p class="lead">enter your information please</p>
+            <p class="lead">@Html.ValidationMessage("MemberException")</p>
         </div>
         <div class="row">
             <div class="col-md-4 offset-4">
@@ -50,7 +51,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="DateOfBirth">Date Of Birth </label>
-                        @Html.TextBoxFor(m => m.Member.DateOfBirth, new { @class = "form-control", placeholder = "1988-04-27" })
+                        @Html.TextBoxFor(m => m.Member.DateOfBirth, new { @class = "form-control", placeholder = "27/04/1988" })
                         @Html.ValidationMessageFor(model => model.Member.DateOfBirth, "", new { @class = "text-danger" })
                     </div>
                     <hr class="mb-4">
